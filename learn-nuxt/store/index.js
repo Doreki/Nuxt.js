@@ -11,3 +11,7 @@ export const mutations = {
     state.cartItems.push(newCartItem)
   },
 }
+
+export const actions = {
+  FETCH_CART_ITEMS({ commit }) {},
+}
