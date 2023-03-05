@@ -19,10 +19,11 @@
 </template>
 
 <script>
+import { FETCH_CART_ITEMS } from '@/store'
 export default {
-  //   async asyncData({ store }) {
-  //     await store.dispatch('fetchCarts')
-  //   },
+  async asyncData({ store }) {
+    await store.dispatch(FETCH_CART_ITEMS)
+  },
   computed: {
     carts() {
       return this.$store.state.carts
