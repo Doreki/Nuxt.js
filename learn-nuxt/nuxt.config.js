@@ -39,4 +39,12 @@ export default {
   server: {
     port: process.env.NODE_ENV === 'production' ? null : 5000,
   },
+
+  // env config
+  env: {
+    baseURL:
+      process.env.NODE_ENV === 'production'
+        ? 'http://localhost:3000'
+        : 'http://localhost:3000',
+  },
 }
